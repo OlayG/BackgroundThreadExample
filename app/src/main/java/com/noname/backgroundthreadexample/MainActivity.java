@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    // Create AsyncTask to run task in the background
+    // Create AsyncTask to run task in the background No Parameters
     private class AsyncTaskCounter extends AsyncTask<Void, Void, Void> {
 
 
@@ -76,6 +76,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         @Override
         protected Void doInBackground(Void... voids) {
             Log.d(TAG, "doInBackground: ");
+
+            
 
             // Create instance of Handler for UI thread(MainActivity)
             // context.getMainLooper() sets the Thread focus to the UI
@@ -109,4 +111,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             start.setVisibility(View.VISIBLE);
         }
     }
+
+
 }
